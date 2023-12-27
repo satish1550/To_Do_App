@@ -1,0 +1,359 @@
+.home {
+    display: flex;
+}
+
+.leftBar {
+    flex: 1;
+    box-shadow: 1px 4px 6px rgba(56, 88, 232, 0.25);
+    z-index: 1;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightBar {
+    flex: 5;
+}
+
+.leftBarTop {
+    display: flex;
+    align-items: center;
+    padding: 16px 30px;
+    /* border: 2px solid red; */
+}
+
+.leftBarTopLogo {
+    width: 20px;
+    height: 20px;
+}
+
+.leftBarTopLogoText {
+    padding-left: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.leftBarModdile {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+}
+
+.leftBarModdileTitle {
+    padding: 10px 0 10px 24px;
+    font-size: 16px;
+    /* border: 2px solid red; */
+    margin: 5px 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    width: 220px;
+    height: 44px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.leftBarModdileTitle:hover {
+    background-color: #EBEEFC;
+}
+
+.leftBarBottom {
+    display: flex;
+    align-items: center;
+    padding: 16px 30px;
+}
+
+.leftBarBottomImg {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.leftBarBottomText {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #3659E2;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: #EBEEFC;
+}
+
+.rightBar {
+    width: 100vw;
+    height: 60px;
+}
+
+.rightBarTopText {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 16px 24px;
+}
+
+.rightBarMiddle {
+    display: flex;
+}
+
+.Todo {
+    width: 310px;
+    padding: 16px 20px;
+}
+
+.TodoTop {
+    display: flex;
+    height: 32px;
+    width: 68px;
+    background-color: #EBEEFC;
+    color: #3659E2;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.ProgressTop {
+    display: flex;
+    height: 32px;
+    width: 97px;
+    background-color: #FDF2FA;
+    color: #EE46BC;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.ReviewTop {
+    display: flex;
+    height: 32px;
+    width: 89px;
+    background-color: #ECF6FC;
+    color: #3FA1E3;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.CompletedTop {
+    display: flex;
+    height: 32px;
+    width: 95px;
+    background-color: #E7F8E9;
+    color: #12BB23;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.TodoTopText {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding-left: 4px;
+}
+
+.dotImg {
+    width: 8px;
+    height: 8px;
+}
+
+.ToDoMiddle {
+    display: flex;
+    flex-direction: column;
+}
+
+.TodoComponent {
+    width: 270px;
+    height: 124px;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(56, 88, 232, 0.25);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.TodoComponentTop {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    /* border: 2px solid red; */
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.TodoComponentMiddle {
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.StartDatecomponet {
+    display: flex;
+    flex-direction: column;
+}
+
+.EndDatecomponet {
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: column;
+    margin-left: 24px;
+}
+
+.DateText {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* border: 2px solid red; */
+    color: #777;
+}
+
+.ToDoDate {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #EBEEFC;
+    color: #3659E2;
+    margin-top: 4px;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.TodoBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3659E2;
+    background-color: #EBEEFC;
+    border-radius: 8px;
+    width: 270px;
+    height: 32px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.TodoBottom:hover {
+    background-color: #D8E0FD;
+}
+
+.ProgressDate {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #FDF2FA;
+    color: #EE46BC;
+    margin-top: 4px;
+    padding: 4px 8px;
+    /* border: 2px solid red; */
+    border-radius: 8px;
+}
+
+.ProgressBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDF2FA;
+    color: #EE46BC;
+    border-radius: 8px;
+    width: 270px;
+    height: 32px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.ProgressBottom:hover {
+    background-color: #FCE7F6;
+}
+
+.ReviewDate {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #ECF6FC;
+    color: #3FA1E3;
+    margin-top: 4px;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.ReviewBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF6FC;
+    color: #3FA1E3;
+    border-radius: 8px;
+    width: 270px;
+    height: 32px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.ReviewBottom:hover {
+    background-color: #D1E9FF;
+}
+
+.CompletedDate {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: #E7F8E9;
+    color: #12BB23;
+    margin-top: 4px;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.CompletedBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7F8E9;
+    color: #12BB23;
+    border-radius: 8px;
+    width: 270px;
+    height: 32px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.CompletedBottom:hover {
+    background-color: #B6EABB;
+}
+
+.ToDoPlus {
+    width: 12px;
+    height: 12px;
+}
+
+.TodoBottomText {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 4px;
+}
+
+.sidebarImage {
+    margin-top: 60px;
+}
