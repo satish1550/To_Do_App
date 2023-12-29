@@ -1,95 +1,3 @@
-.home {
-    display: flex;
-}
-
-.leftBar {
-    flex: 1;
-    box-shadow: 1px 4px 6px rgba(56, 88, 232, 0.25);
-    z-index: 1;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-.rightBar {
-    flex: 5;
-}
-
-.leftBarTop {
-    display: flex;
-    align-items: center;
-    padding: 16px 30px;
-    /* border: 2px solid red; */
-}
-
-.leftBarTopLogo {
-    width: 20px;
-    height: 20px;
-}
-
-.leftBarTopLogoText {
-    padding-left: 10px;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-}
-
-.leftBarModdile {
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    padding: 24px 16px;
-}
-
-.leftBarModdileTitle {
-    padding: 10px 0 10px 24px;
-    font-size: 16px;
-    /* border: 2px solid red; */
-    margin: 5px 0;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    width: 220px;
-    height: 44px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.leftBarModdileTitle:hover {
-    background-color: #EBEEFC;
-}
-
-.leftBarBottom {
-    display: flex;
-    align-items: center;
-    padding: 16px 30px;
-}
-
-.leftBarBottomImg {
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-}
-
-.leftBarBottomText {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    color: #3659E2;
-    padding-left: 10px;
-    cursor: pointer;
-}
-
-hr {
-    height: 1px;
-    border: none;
-    background-color: #EBEEFC;
-}
-
 .rightBar {
     width: 100vw;
     height: 60px;
@@ -185,7 +93,6 @@ hr {
     margin-bottom: 24px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(56, 88, 232, 0.25);
-    z-index: 1;
     cursor: pointer;
 }
 
@@ -220,7 +127,6 @@ hr {
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    /* border: 2px solid red; */
     color: #777;
 }
 
@@ -234,6 +140,7 @@ hr {
     margin-top: 4px;
     padding: 4px 8px;
     border-radius: 8px;
+    margin-right: 25px;
 }
 
 .TodoBottom {
@@ -262,7 +169,7 @@ hr {
     color: #EE46BC;
     margin-top: 4px;
     padding: 4px 8px;
-    /* border: 2px solid red; */
+    margin-right: 25px;
     border-radius: 8px;
 }
 
@@ -293,6 +200,7 @@ hr {
     margin-top: 4px;
     padding: 4px 8px;
     border-radius: 8px;
+    margin-right: 25px;
 }
 
 .ReviewBottom {
@@ -322,6 +230,7 @@ hr {
     margin-top: 4px;
     padding: 4px 8px;
     border-radius: 8px;
+    margin-right: 25px;
 }
 
 .CompletedBottom {
@@ -356,4 +265,215 @@ hr {
 
 .sidebarImage {
     margin-top: 60px;
+}
+
+
+.modalBackdrop {
+    width: 500px;
+    height: 210px;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    transform: translate(110%, 130%);
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+.modalTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.modalTop>h1 {
+    font-size: 20px;
+    color: #3659E2;
+}
+
+.modal>input {
+    font-size: 18px;
+    height: 38px;
+    border-radius: 8px;
+    text-indent: 10px;
+    border: 1px solid gray;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.modalBottom {
+    display: flex;
+}
+
+.cancelButton,
+.updateButton {
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin-left: auto;
+    border: none;
+    color: white;
+    background-color: #3659E2;
+}
+
+.updateButton:hover {
+    background-color: transparent;
+    color: #3659E2;
+    border: 1px solid #3659E2;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.modalTask {
+    width: 670px;
+    height: 388px;
+    display: flex;
+    margin: auto;
+    position: absolute;
+    background-color: white;
+    transform: translate(25%, 40%);
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0px 24px;
+}
+
+.taskTop {
+    color: #3659E2;
+    font-size: 16px;
+    /* border: 2px solid red; */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 10px 0px;
+}
+
+.dates {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.labeltext {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.error {
+    /* border: 2px solid red; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #E92B2B;
+    /* margin: 5px 5px; */
+}
+
+.task>input {
+    font-size: 18px;
+    height: 38px;
+    border-radius: 8px;
+    text-indent: 10px;
+    border: 1px solid gray;
+}
+
+.startDate[type="date"] {
+    font-size: 18px;
+    height: 38px;
+    width: 270px;
+    border-radius: 8px;
+    text-indent: 10px;
+    border: 1px solid gray;
+    padding-right: 10px;
+}
+
+.list {
+    font-size: 18px;
+    height: 38px;
+    width: 100%;
+    border-radius: 8px;
+    text-indent: 10px;
+    margin-top: 25px;
+    border: 1px solid gray;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    transform: translate(0, 450%);
+    /* justify-content: space-between; */
+}
+
+.TaskButtons,
+.TaskButtonsCansel {
+    cursor: pointer;
+    width: 80px;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin-left: auto;
+    border: none;
+    color: white;
+    background-color: #3659E2;
+}
+
+.TaskButtons {
+    margin-left: 43px;
+}
+
+.TaskButtonsCansel {
+    color: white;
+    margin-left: 420px;
+    background-color: #E92B2B;
+}
+
+.TaskButtons:hover {
+    background-color: transparent;
+    color: #3659E2;
+    border: 1px solid #3659E2;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.TaskButtonsCansel:hover {
+    background-color: transparent;
+    color: #E92B2B;
+    border: 1px solid #E92B2B;
+    transition: 0.3s ease;
+    font-weight: bold;
+}
+
+.EndDate {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
 }
